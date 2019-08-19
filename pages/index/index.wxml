@@ -1,0 +1,43 @@
+<!--index.wxml-->
+<view>
+
+  <!-- <view class='livingBroadcast' style='background-image: url("/images/img_bg.png")' wx:if='{{liveList.length}}'>
+    <view class='livingBroadcastList'>
+    <block wx:for='{{liveList}}' wx:key='{{index}}'>
+          <view class='livingBroadcastItem' bindtap='jumpToPusher' data-Id='{{item.id}}' data-isAnchor='{{item.isAnchor}}'>
+        <image src='{{item.cover}}'></image>
+        <view class='opration_msg'>
+          <view class='msg_title'>{{item.title}}</view>
+          <view class='msg_num'>
+            <view wx:if='{{item.liveStatus==2}}'><image src='{{item.liveStatus==2?"/images/now_play.png":""}}' ></image></view>
+            <view>{{item.viewerCount}}人观看</view>
+          </view>
+        </view>
+      </view>
+     </block>
+    </view>
+  </view> -->
+  <!-- <view class='immediatelyStarted' wx:if='{{eveList.length}}'>
+    <view class='type_title'><image src='/images/title_icon.png' ></image> <text>即将开始</text></view>
+    <view>
+      <block wx:for='{{eveList}}' wx:key='index'>
+        <c-index_row type='begin' bindtap='jumpToPusher'  data-Id='{{item.id}}' data-isAnchor='{{item.isAnchor}}' isLive='{{isLive}}' item='{{item}}' />
+      </block>
+    </view>
+  </view> -->
+  <view class='highlightReplays' wx:if='{{vodList.length}}'>
+      <view class='type_title'><image src='/images/title_icon.png' ></image> <text>精彩回放</text></view>
+    <view>
+    <view>
+      <block wx:for='{{vodList}}' wx:key='index'>
+        <c-index_row type='playBack'  bindtap='jumpToVedio' data-videoUrl='{{item.videoUrl}}'  data-Id='{{item.id}}'  item='{{item}}' />
+      </block>
+    </view>
+    </view>
+  
+  </view>
+<c-the_endTip wx:if='{{reachTheBottom}}' />
+
+
+</view>
+<c-toast id="toast"/>

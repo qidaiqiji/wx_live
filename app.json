@@ -1,0 +1,33 @@
+{
+  "pages": [
+
+    
+    "pages/index/index",
+    "pages/pusher/pusher",
+    "pages/login/login",
+    "pages/provinceSelect/provinceSelect",
+    "pages/usableno/usableno",
+    "pages/usable/usable",
+    "pages/player/player",
+    "pages/videos/videos"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "小美学院",
+    "navigationBarTextStyle": "black"
+  },
+  "sitemapLocation": "sitemap.json",
+  "navigateToMiniProgramAppIdList": [
+    "wxde9818782425c9f3"
+  ],
+  "usingComponents": {
+    "c-index_row": "/components/index_row/index",
+    "c-the_endTip": "/components/the_endTip/index",
+    "c-navigation_top": "/components/navigation_top/index",
+    "c-modal": "/components/modal/index",
+    "c-ShoppingDrawer": "/components/ShoppingDrawer/index",
+    "c-toast": "/components/toast/index",
+    "c-title": "/components/title/title"
+  }
+}

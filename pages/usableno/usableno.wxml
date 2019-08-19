@@ -1,0 +1,41 @@
+<!--pages/usableno/usableno.wxml-->
+<view>
+    <view class="top_wrap_img">
+        <view wx:if="{{istue}}" class="top_wrap">
+            <image class="top_img_one" src="./img/img_auditing.png"></image>
+            <view class="top_wrap_twp">
+                <image class="top_img_two" src="./img/icon_auditing.png"></image>
+                <view class="top_img_txt">审核中</view>
+            </view>
+        </view>
+        <view wx:else class="top_wrap">
+            <image class="top_img_one" src="./img/img_auditdefeat.png"></image>
+            <view class="top_wrap_twp">
+                <image class="top_img_two" src="./img/icon_auditdefeat.png"></image>
+                <view class="top_img_txt">审核失败</view>
+            </view>
+        </view>
+    </view>
+    <view class="top_wrap_txt">
+        <view class="top_txt"  wx:if="{{istue}}">您的认证资料已提交成功，请耐心等待管理员审核！ 如有疑问，请致电客服。</view>
+        <view class="top_txt"  wx:else>您的资料审核未能通过，请您重新修改提交资料！如有疑问，请致电客服热线。</view>
+    </view>
+    <view class="conter">
+        <view>
+            <image class="conter_img" src="{{qrcode}}" data-imgs="{{qrcode}}" data-img="{{qrcode}}" bindtap='previewImage'></image>
+        </view>
+        <view class="conter_two_wrap">
+            <view class="conter_txt_one">您所在区域客服热线： </view>
+            <view class="conter_txt_two">18928457720 </view>
+            <view class="conter_txt_one">工作时间： </view>
+            <view class="conter_txt_two">9：00~19：30</view>
+        </view>
+    </view>
+    <view class="bottom_wrap">
+        <view class="bottom_txt_one" catchtap='newsubmit'>重新提交</view>
+        <view class="bottom_txt_two" catchtap='returnmy'>回到首页</view>
+    </view>
+    <!-- <view class="bottom_txt_three">
+        退出登录
+    </view> -->
+</view>

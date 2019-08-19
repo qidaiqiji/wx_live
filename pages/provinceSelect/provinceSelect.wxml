@@ -1,0 +1,25 @@
+<!--pages/address/address.wxml-->
+<!-- 小美诚品 -->
+  <view class='theme_img'>
+    <view class='jumpToHome' bindtap='jumpToHome'>去首页></view>
+    <title></title>
+  </view>
+<!-- 省份 -->
+<view class='provinces_wrap'>
+  <image src='/images/login_icon_site@2x.png'></image>
+  <!-- 选择 -->
+  <view class="section">
+    <view class='cdBottom_left_picker  {{provinceName?"":"placeHoder"}}' bindtap="handleShowAddr">
+      {{provinceName?provinceName:'请选择您的省份地址'}}
+    </view>
+  </view>
+</view>
+<!-- 完成 -->
+<view class='addres_done' bindtap='addressmy' style="background: {{sms}};">
+  <view class='done_wrap_text'>完成</view>
+</view>
+
+
+
+<c-choose_address condition='{{condition}}' onlyProvince="{{onlyProvince}}"  bindclose='handleClose' bindcloseTwo='handleCloseColor' value='{{value}}' wx:if='{{condition}}' />
+<i-toast id="toast" />

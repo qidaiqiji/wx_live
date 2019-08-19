@@ -1,0 +1,24 @@
+<!--pages/videos/videos.wxml-->
+            <video class="swiper_video" id="swiper_video" src="{{url}}" controls='true' autoplay
+enable-play-gesture
+bindended="isVideoEnd" bindtap='handleVideoPage' show-center-play-btn play-btn-position='center' show-play-btn='{{false}}'
+  show-fullscreen-btn='{{false}}'></video>
+
+<view class='msg_top'>
+  <view class='msg_topNum'>{{viewerCount?viewerCount:0}}人观看</view>
+  <view class='msg_topTitle'>小美课室</view>
+</view>
+<view class='msg_bottom'>
+        <cover-view class='showGoodsList'>
+
+          <cover-view class='showGoods_Btn' wx:if='{{goodsNumber>0}}'  catchtap='handleShowAllgoods'>
+            <cover-image class='goods_img' src='/images/icon_shop.png' />
+            <cover-view class='goods_txt'>相关商品</cover-view>
+          </cover-view>
+          <cover-view class='goodsNum' wx:if='{{goodsNumber>0}}'>
+            <cover-view class='goodsNum_'>{{goodsNumber?goodsNumber:0}}</cover-view>
+          </cover-view>
+        </cover-view>
+  <view></view>
+</view>
+<c-ShoppingDrawer wx:if='{{isShowShoppingCart}}' goodsList='{{goodsList}}' cartCount='{{cartCount}}' bindhideShoppingCart='hideShoppingCart'/>

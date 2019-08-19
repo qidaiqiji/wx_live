@@ -1,0 +1,14 @@
+<!--components/navigation_top/index.wxml-->
+<cover-view style="height:{{titleBarHeight}}px;padding-top:{{statusBarHeight}}px" class='navigations'>
+  <cover-view class="header" style="height:{{titleBarHeight}}px;padding-top:{{statusBarHeight}}px">
+    <cover-view wx:if="{{showIcon}}" class="title-bar">
+      <cover-view class="back" bindtap="headerBack"><cover-image 
+class='backImg'      src="https://dn-testimage.qbox.me/Files/08/6b/086b8e19c7a5aa031dc4df31ca8b53ac2ed32212_644.png"></cover-image></cover-view>
+      <!-- <cover-view class="line"></cover-view>
+      <cover-view class="home" bindtap="headerHome"><cover-image src="https://dn-testimage.qbox.me/Files/fc/49/fc4958729bf1937667b68c78f495edeafe30f339_1030.png"></cover-image></cover-view> -->
+      <cover-view class='headerNum'>{{viewerCount?viewerCount:0}}人观看</cover-view>
+    </cover-view>
+    <cover-view class="header-title">{{title}}</cover-view>
+  </cover-view>
+  <!-- <view class="loading-wrap"><image class="loading-gif" src="https://dn-testimage.qbox.me/Files/e0/35/e03562502eae6d5944bed747b7c21a3c2cce1ff8_1250.gif"></image></view> -->
+</cover-view>

@@ -1,0 +1,86 @@
+
+
+
+
+    <!-- <live-pusher id="pusher" url="{{url}}" mode='live' bindstatechange="statechange" beauty='{{beauty}}' whiteness='{{whiteness}}' background-mute='true' muted='{{isMuted}}' bindtap='handlePusher' device-position='back'>
+      <c-modal wx:if='{{isShowModal}}' content='{{content}}' operations='{{operations}}' bindclickModal='handleclickModal' />
+      <cover-view class='closeOperation' wx:if='{{isShowCloseOperation}}'>
+            <cover-view class='pause' catchtap='handlePause'>
+              <cover-image class='pause_img' src='/images/icon_pause.png'></cover-image>
+              <cover-view class='pause_txt' >暂停</cover-view></cover-view>
+            <cover-view class='stop' catchtap='handleStop'>
+              <cover-image class='stop_img' src='/images/icon_stop.png'></cover-image>
+              <cover-view class='stop_txt' >下课</cover-view>
+            </cover-view>
+
+      </cover-view>
+    <cover-view class='pauseShow'  wx:if='{{hadPause}}'>
+            <cover-view class='pauseMask_'></cover-view>
+         <c-navigation_top id='Navigation' show-icon='{{true}}' title="小美课室" bindclickBack='handleclickBack'></c-navigation_top>
+      <cover-view class='pauseMsg'>
+            <cover-view class='continuePlay' catchtap='handlecontinuePlay'>
+                  <cover-image class='continuePlay_img' src='/images/icon_play.png'></cover-image>
+                  <cover-view class='continuePlay_txt'>继续开课</cover-view>
+            </cover-view>
+      </cover-view>
+    </cover-view>
+    <cover-view class='endShow' wx:if='{{hadStop}}'>
+
+        <cover-view class='endMask_'></cover-view>
+         <c-navigation_top id='Navigation' show-icon='{{true}}' title="小美课室" bindclickBack='handleclickBack'></c-navigation_top>
+      <cover-view class='endMsg'>
+        <cover-view class='end_title'>课程已结束</cover-view>
+        <cover-view class='end_main'>
+            <cover-view class='end_mainLeft'>
+                <cover-view class='mainLeft_top'>20000.3万</cover-view>
+                <cover-view class='mainLeft_bottom'>观看人数</cover-view>
+            </cover-view>
+            <cover-view class='end_mainLine'></cover-view>
+            <cover-view class='end_mainRight'>
+                <cover-view class='mainRight_top'>05:59:59</cover-view>
+                <cover-view class='mainRight_bottom'>课程时长</cover-view>
+            </cover-view>
+        </cover-view>
+      </cover-view>
+           <cover-view class='bottom_close' bindtap='handleClose'>关闭</cover-view>
+    </cover-view>
+
+    
+      <cover-view>
+
+
+      </cover-view>
+               <c-navigation_top id='Navigation' show-icon='{{true}}' title="小美课室" bindclickBack='handleclickBack'></c-navigation_top>
+
+      <cover-view class='countDown' wx:if='{{hideReadyPlay&&isPlay>0}}'>{{isPlay}}</cover-view>
+      <cover-view class='float_components' style='height:170rpx' >
+        <cover-view class='showGoodsList'>
+
+          <cover-view class='showGoods_Btn' wx:if='{{goodsNumber>0}}'  catchtap='handleShowAllgoods'>
+            <cover-image class='goods_img' src='/images/icon_shop.png' />
+            <cover-view class='goods_txt'>相关商品</cover-view>
+          </cover-view>
+          <cover-view class='goodsNum' wx:if='{{goodsNumber>0}}'>
+            <cover-view class='goodsNum_'>16</cover-view>
+          </cover-view>
+        </cover-view>
+        <cover-view class='readyForPlay' bindtap='handlePlay' wx:if='{{!hideReadyPlay}}'>
+          <cover-view class='readyForPlayDot'></cover-view>
+        </cover-view>
+        <cover-view class='orientation' bindtap='handleOrientation' wx:if='{{hideReadyPlay}}'>
+          <cover-image src='/images/icon_cut.png' class='orientation_img'></cover-image>
+        </cover-view>
+        <cover-view class='right_btn'>
+          <cover-view class='right_btn_transpond'>
+            <button open-type='share' hover-class="none" class='transpond_btn'>
+              <cover-image class='transpond_img' src='/images/icon_transpond.png' />
+            </button>
+          </cover-view>
+        </cover-view>
+      </cover-view>
+
+<c-ShoppingDrawer wx:if='{{isShowShoppingCart}}' goodsList='{{goodsList}}' cartCount='{{cartCount}}' bindhideShoppingCart='hideShoppingCart'/>
+
+    </live-pusher> -->
+
+

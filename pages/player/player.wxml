@@ -1,0 +1,58 @@
+<view class="container">
+
+  <view class="main">
+    <!-- <live-player id="player" src="{{url}}" bindstatechange="statechange" binderror="error" mode="live" autoplay="true" object-fit="fillCrop">
+      <c-navigation_top id='Navigation' show-icon='{{true}}' viewerCount='{{viewerCount}}' title="小美课室" bindclickBack='handleclickBack'></c-navigation_top>
+      <c-modal wx:if='{{isShowModal}}' content='{{content}}' operations='{{operations}}' bindclickModal='handleclickModal' />
+      <cover-view class='float_components' wx:if='{{status<3}}'>
+        <cover-view class='showGoodsList' >
+          <cover-view class='showGoods_Btn' wx:if='{{goodsNumber>0}}'  catchtap='handleShowAllgoods'>
+            <cover-image class='goods_img' src='/images/icon_shop.png' />
+            <cover-view class='goods_txt'>相关商品</cover-view>
+          </cover-view>
+          <cover-view class='goodsNum' wx:if='{{goodsNumber>0}}'>
+            <cover-view class='goodsNum_'>16</cover-view>
+          </cover-view>
+        </cover-view>
+        
+        <cover-view class='right_btn'>
+          <cover-view class='right_btn_transpond'>
+            <button open-type='share' hover-class="none" class='transpond_btn'>
+              <cover-image class='transpond_img' src='/images/icon_transpond.png' />
+            </button>
+          </cover-view>
+        </cover-view>
+      </cover-view>
+
+      <c-ShoppingDrawer wx:if='{{isShowShoppingCart}}' goodsList='{{goodsList}}' cartCount='{{cartCount}}' bindhideShoppingCart='hideShoppingCart' />
+      <cover-view class='endShow' wx:if='{{status==3||status==4||status==1}}'>
+
+        <cover-view class='endMask_'></cover-view>
+        <c-navigation_top id='Navigation' show-icon='{{true}}' title="小美课室" bindclickBack='handleclickBack'></c-navigation_top>
+        <cover-view class='endMsg'>
+          <cover-view class='end_title' wx:if='{{status==3}}'>课程已结束</cover-view>
+          <cover-view class='end_main' wx:if='{{status==3}}'>
+            <cover-view class='end_mainLeft'>
+              <cover-view class='mainLeft_top'>{{viewerCount?viewerCount:0}}</cover-view>
+              <cover-view class='mainLeft_bottom'>观看人数</cover-view>
+            </cover-view>
+            <cover-view class='end_mainLine'></cover-view>
+            <cover-view class='end_mainRight'>
+              <cover-view class='mainRight_top'>05:59:59</cover-view>
+              <cover-view class='mainRight_bottom'>课程时长</cover-view>
+            </cover-view>
+          </cover-view>
+          <cover-view class='pause_title' wx:if='{{status==4}}'>课程暂停中</cover-view>
+          <cover-view class='pause_main' wx:if='{{status==4}}'>
+            <cover-view class='pause_txtTop'>老师现在有事离开啦~</cover-view>
+            <cover-view class='pause_txtBottom'>不要离开，稍后将继续开课哦~</cover-view>
+          </cover-view>
+          <cover-view class='pause_title' wx:if='{{status==1}}'>老师正在路上</cover-view>
+        </cover-view>
+        <cover-view class='bottom_close' bindtap='handleClose'>关闭</cover-view>
+      </cover-view>
+    </live-player> -->
+
+  </view>
+</view>
+<!-- <view class='testHandle' catchtap='handleShowAllgoods'>dianji shijian </view> -->

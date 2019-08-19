@@ -1,0 +1,55 @@
+<view class='login_wrap'>
+  <view class='theme_img'>
+    <view class='jumpToHome' bindtap='jumpToHome'>去首页></view>
+    <c-title></c-title>
+  </view>
+  <view class='login_from'>
+    <view class='login_number'>
+      <image class='login_image' src='/images/icon_user.png'></image>
+      <input class="login_numberN" bindinput='bindnumder' type="number" placeholder-style="color:rgba(212,212,212,1);" value="{{usernumber}}" placeholder='请输入你的电话号码' maxlength="11"></input>
+    </view>
+    <view class='login_code'>
+      <view wx:if="{{hide==1}}">
+        <movable-area class="content">
+          <movable-view class='box' animation='true' style="height: 98rpx; width: 98rpx;" damping='40' friction="{{2}}" direction="horizontal" x="{{x}}" bindchange="chang" bindtouchend='htouchmoveis'>
+            <image class='swiper_image' src='/images/icon_righ.png'></image>
+          </movable-view>
+          <view class="rightswiper">
+            <text class="rightswiper2">右滑验证</text>
+          </view>
+        </movable-area>
+      </view>
+      <view wx:elif="{{hide==2}}">
+        <view class='swiper_b'>
+          <text class='swiper_ss'>验证成功</text>
+          <image class='sswiper_image' src='/images/icon_successful.png'></image>
+        </view>
+      </view>
+      <view class='code' wx:else>
+        <view class='code1'>
+          <image class='code1_img' src='/images/login_icon_captcha.png'></image>
+          <input type='number' bindinput='bindcode' placeholder-style="color:rgba(212,212,212,1);" placeholder="验证码" maxlength="6" auto-focus/>
+        </view>
+        <view class='code2' bindtap='code_fn' style="background: {{ms}};">
+          <text>{{num > 0?num+"S后重新获取":"获取验证码"}}</text>
+    
+            
+        </view>
+      </view>
+    </view>
+    <view class='lop'>
+      <button formType="submit" class='a2' bindtap='loginup' style="background: {{mss}};">
+        <text class='ltext'>登录/注册</text>
+      </button>
+    </view>
+  </view>
+  <view class='from_text'>
+    若您输入的手机号未注册，将会进入注册流程。注册表示您已阅读并同意
+    <text class="from_text2" catchtap='agreement'>《小美诚品用户服务协议》</text>
+  </view>
+  <!-- 验证码 -->
+</view>
+
+<i-button type="ghost" bindtap="handlenumber"></i-button>
+<i-button type="ghost" bindtap="handlecode"></i-button>
+<i-toast id="toast" />

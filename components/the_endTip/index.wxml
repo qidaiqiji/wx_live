@@ -1,0 +1,6 @@
+<!--components/the_endTip/index.wxml-->
+<view class='bg'>
+  <view class=' color'></view>
+  <view class='text color'>已经到底了</view>
+  <view class=' color'></view>
+</view>

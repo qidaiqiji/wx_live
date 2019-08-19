@@ -1,0 +1,173 @@
+/* pages/self/usable/usable.wxss */
+
+page {
+  border-top: 1rpx solid #e5e5e5;
+}
+
+.theme_img {
+  position: relative;
+}
+
+.jumpToHome {
+  position: absolute;
+  top: 0rpx;
+  right: 10rpx;
+  width: 135rpx;
+  padding-left: 20rpx;
+  padding-right: 20rpx;
+  height: 50rpx;
+  display: flex;
+  align-items: center;
+  font-size: 24rpx;
+  font-family: PingFangSC-Regular;
+  font-weight: 400;
+  color: rgba(255, 51, 102, 1);
+}
+
+.login_number {
+  width: 662rpx;
+  height: 88rpx;
+  background: rgba(243, 243, 243, 1);
+  border-radius: 4rpx;
+  display: flex;
+  align-items: center;
+}
+
+.login_numberN {
+  width: 632rpx;
+  height: 88rpx;
+  font-size: 28rpx;
+  font-family: PingFang-SC-Regular;
+  font-weight: 400;
+  color: rgba(47, 58, 64, 1);
+  line-height: 88rpx;
+  padding-left: 17rpx;
+}
+
+.conter_wrap {
+  margin-top: 140rpx;
+}
+
+.login_number_one {
+  display: flex;
+  align-items: center;
+}
+
+.login_number_two {
+  margin-top: 40rpx;
+  display: flex;
+  align-items: center;
+}
+
+.star {
+  width: 14rpx;
+  height: 78rpx;
+  font-size: 38rpx;
+  font-family: SFUIDisplay-Regular;
+  font-weight: 400;
+  color: rgba(255, 51, 102, 1);
+  line-height: 88rpx;
+  margin-right: 8rpx;
+  margin-left: 26rpx;
+}
+
+.login_number_three {
+  display: flex;
+  align-items: center;
+}
+
+.prove {
+  width: 198rpx;
+  height: 88rpx;
+  font-size: 28rpx;
+  font-family: PingFang-SC-Regular;
+  font-weight: 400;
+  color: rgba(136, 150, 150, 1);
+  line-height: 88rpx;
+}
+
+.photo_wrap {
+  display: flex;
+  justify-content: space-around;
+}
+
+.photo_img {
+  width: 310rpx;
+  height: 205rpx;
+  overflow: hidden;
+}
+
+.image {
+  width: 310rpx;
+  height: 205rpx;
+  vertical-align: top;
+}
+
+.photo_txt {
+  width: 310rpx;
+  height: 50rpx;
+  background: rgba(255, 143, 171, 1);
+  font-size: 24rpx;
+  font-family: PingFang-SC-Medium;
+  font-weight: 500;
+  color: rgba(254, 254, 254, 1);
+  line-height: 50rpx;
+  text-align: center;
+}
+
+.photo_bottom {
+  height: 58rpx;
+  font-size: 24rpx;
+  font-family: PingFang-SC-Medium;
+  font-weight: 500;
+  color: rgba(178, 178, 178, 1);
+  line-height: 32rpx;
+  margin: 21rpx 53rpx 0rpx 21rpx;
+}
+
+.shenhe {
+  width: 750rpx;
+  text-align: center;
+  margin-top: 104rpx;
+  padding-bottom: 32rpx;
+  display: flex;
+  justify-content: center;
+}
+
+.shenhe>view {
+  width: 662rpx;
+  height: 88rpx;
+  background: rgba(255, 174, 194, 1);
+  border-radius: 4rpx;
+  /* position: absolute;
+  bottom: 32rpx;
+  left: 48rpx; */
+  font-size: 32rpx;
+  font-family: PingFang-SC-Medium;
+  font-weight: 500;
+  color: rgba(255, 255, 255, 1);
+  line-height: 88rpx;
+  text-align: center;
+}
+
+.prompt {
+  width: 750rpx;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding-left: 24rpx;
+  padding-bottom: 24rpx;
+}
+
+.prompt>image {
+  width: 28rpx;
+  height: 28rpx;
+  margin-right: 8rpx;
+}
+
+.prompt>view {
+  font-size: 24rpx;
+  font-family: PingFangSC-Light;
+  font-weight: 300;
+  color: rgba(255, 51, 102, 1);
+}

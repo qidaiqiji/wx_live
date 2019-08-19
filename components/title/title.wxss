@@ -1,0 +1,19 @@
+/* login/title/title.wxss */
+
+.title_wrap1 {
+  margin-left: 232rpx;
+  margin-top: 134rpx;
+  width: 285rpx;
+  height: 60rpx;
+}
+
+.title_wrap2>text {
+  font-weight: Medium;
+  margin-left: 230rpx;
+  font-family: PingFang-SC-Medium;
+  text-align: center;
+  color: #ff8fab;
+  width: 286rpx;
+  height: 24rpx;
+  font-size: 24rpx;
+}

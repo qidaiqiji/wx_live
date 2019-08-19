@@ -1,0 +1,23 @@
+<view class='Mask' wx:if='{{condition}}' bindtap='cancel' catchtouchmove='move'></view>
+<view wx:if="{{condition}}" class="citypicker">
+  <view class="cityheader_wrap {{modalName?'cityheader_wrap_two':''}}">
+    <view class="cityheader">
+      <view bindtap="cancel" class="city-cancel">取消</view>
+      <view bindtap="confirm" class="city-true">确定</view>
+    </view>
+    <view class='RegionalComponent'>
+      <picker-view indicator-style="height: 47px;" style="width: 100%; height: 450rpx;" value="{{value}}" bindchange="bindChange"
+        class="citybody">
+        <picker-view-column>
+          <view wx:for="{{provinces}}" wx:key="item" class='pickerItem'>{{item}}</view>
+        </picker-view-column>
+        <picker-view-column wx:if='{{!onlyProvince}}'>
+          <view wx:for="{{citys}}" wx:key="item" class='pickerItem'>{{item}}</view>
+        </picker-view-column>
+        <picker-view-column wx:if='{{!onlyProvince}}'>
+          <view wx:for="{{countys}}" wx:key="item" class='pickerItem'>{{item}}</view>
+        </picker-view-column>
+      </picker-view>
+    </view>
+  </view>
+</view>

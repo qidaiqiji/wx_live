@@ -1,0 +1,63 @@
+<!--pages/self/usable/usable.wxml-->
+<view>
+    <view class='theme_img'>
+        <view class='jumpToHome' bindtap='jumpToHome'>去首页></view>
+        <title></title>
+    </view>
+    <view class="conter_wrap">
+        <view class="prompt">
+            <image class="" src="/images/icon_warning.png" />
+            <view>
+                请提交完整资料，待审核通过后可看价、下单。
+            </view>
+        </view>
+        <!-- 店名 -->
+        <view class="login_number_one">
+            <view class="star">*</view>
+            <view class='login_number '>
+                <input type='text' class="login_numberN" bindinput='usershop'
+                    placeholder-style="color:rgba(212,212,212,1);" value="{{usershop}}" placeholder='请输入实体店名称'
+                    maxlength="20"></input>
+            </view>
+        </view>
+        <!-- 铺名 -->
+        <view class="login_number_two">
+            <view class="star">*</view>
+            <view class='login_number '>
+                <input type='text' class="login_numberN" bindinput='username'
+                    placeholder-style="color:rgba(212,212,212,1);" value="{{username}}" placeholder='请输入联系人姓名'
+                    maxlength="20"></input>
+            </view>
+        </view>
+        <!-- 资质证明 -->
+        <view class="conter">
+            <view class="login_number_three">
+                <view class="star">*</view>
+                <view class="prove">资质证明</view>
+            </view>
+            <!-- 图片 -->
+            <view class="photo_wrap">
+                <view class="photo">
+                    <view class="photo_img">
+                        <image class="image" mode="aspectFill" src="{{img_one}}"></image>
+                    </view>
+                    <view class="photo_txt" data-is="01" bindtap='getSex'>{{txtOne}}</view>
+                </view>
+                <view class="photo">
+                    <view class="photo_img">
+                        <image class="image" mode="aspectFill" src="{{img_two}}"></image>
+                    </view>
+                    <view class="photo_txt" data-is="02" bindtap='getSex'>{{txtTwo}}</view>
+                </view>
+            </view>
+            <view class="photo_bottom">请提供营业执照、店铺照片作为实体凭证，单张图片不超过2M，支持jpg、png格式</view>
+        </view>
+    </view>
+    <view class="shenhe">
+        <view catchtap='submitOn' style="background: {{iscolor}}">提交审核</view>
+    </view>
+</view>
+<i-action-sheet visible="{{ isactionSheet }}" actions="{{ actiions }}" show-cancel bind:cancel="actionSheetCancel"
+    bind:click="actionSheetClickItem" />
+
+<i-toast id="toast" />

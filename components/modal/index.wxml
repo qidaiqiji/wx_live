@@ -1,0 +1,13 @@
+<!--components/modal/index.wxml-->
+
+      <cover-view class='mask_' catchtap='cancel' catchtouchmove='move' ></cover-view>
+<cover-view class='modal_tip'>
+  <cover-view class='modal_title'>提示</cover-view>
+  <cover-view class='modal_content'>{{content}}</cover-view>
+  <cover-view class='modal_operation'>
+    <cover-view class='operation_left' bindtap='cancel' wx:if='{{operations[0]!=""}}'>{{operations[0]}}</cover-view>
+    <cover-view class='line'wx:if='{{operations[0]!=""}}'></cover-view>
+    <cover-view class='operation_right' bindtap='handleBack'>{{operations[1]}}</cover-view>
+  </cover-view>
+
+</cover-view> 

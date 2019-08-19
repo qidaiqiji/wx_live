@@ -1,0 +1,66 @@
+.Mask {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 9990;
+}
+
+.citypicker {
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  z-index: 9999;
+  background: #fff;
+  border-bottom: 1rpx solid #e4eef0;
+}
+.cityheader_wrap{
+  width: 100%;
+  height: 0rpx;
+}
+.cityheader_wrap_two {
+  height: 594rpx;
+  transition: all 0.2s linear;
+}
+.cityheader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 120rpx;
+  background: #f3f3f3;
+}
+
+.city-cancel {
+  font-size: 28rpx;
+  color: #677172;
+  width: 100rpx;
+  text-align: center;
+}
+
+.city-true {
+  font-size: 28rpx;
+  color: #f36;
+  width: 100rpx;
+  text-align: center;
+}
+
+.citybody {
+  box-sizing: border-box;
+  overflow: hidden;
+  font-size: 28rpx;
+}
+
+.RegionalComponent {
+  width: 100%;
+  height: 475rpx;
+  padding: 20rpx 0;
+}
+.pickerItem{
+  line-height: 94rpx;
+  padding-left:10rpx;
+  text-align:center;
+  color: #2f3a40;
+  font-size: 32rpx;
+}

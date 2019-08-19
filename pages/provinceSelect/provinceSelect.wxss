@@ -1,0 +1,76 @@
+/* pages/my_address/my_address.wxss */
+/* pages/address/address.wxss */
+page{
+  border-top:1rpx solid #e5e5e5;
+}
+.theme_img{
+  position: relative;
+}
+.jumpToHome{
+  position: absolute;
+  top: 0rpx;
+  right: 10rpx;
+  width: 135rpx;
+  padding-left: 20rpx;
+  padding-right: 20rpx;
+  height: 50rpx;
+  display: flex;
+  align-items: center;
+  font-size:24rpx;
+font-family:PingFangSC-Regular;
+font-weight:400;
+color:rgba(255,51,102,1);
+}
+.provinces_wrap {
+  margin-top: 209rpx;
+  margin-left: 48rpx;
+  background: rgba(243, 243, 243, 1);
+  border-radius: 4rpx;
+  width: 662rpx;
+  height: 88rpx;
+  display: flex;
+  align-items: center;
+}
+
+.provinces_wrap>image {
+  width: 44rpx;
+  height: 44rpx;
+  margin-left: 10rpx;
+}
+
+.addres_done {
+  margin-top: 80rpx;
+  margin-left: 47rpx;
+  width: 662rpx;
+  height: 88rpx;
+  background: rgba(255, 174, 194, 1);
+  border-radius: 4rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.done_wrap_text {
+  width: 62rpx;
+  height: 31rpx;
+  font-family: PingFang-SC-Medium;
+  font-weight: 500;
+  color: rgba(255, 255, 255, 1);
+  /* line-height: 18rpx; */
+  font-size: 28rpx;
+}
+
+.cdBottom_left_picker {
+  width: 462rpx;
+  height: 88rpx;
+  background: rgba(243, 243, 243, 1);
+  border-radius: 4rpx;
+  font-size: 28rpx;
+  font-family: PingFang-SC-Medium;
+  font-weight: 500;
+  color: rgba(47, 58, 64, 1);
+  line-height: 88rpx;
+}
+.placeHoder{
+  color: #D4D4D4;
+}

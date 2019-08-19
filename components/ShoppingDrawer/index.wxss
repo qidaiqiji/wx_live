@@ -1,0 +1,161 @@
+/* components/ShoppingDrawer/index.wxss */
+.mask_ {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #000;
+  opacity: 0.6;
+  transition: all 300ms ease-in-out;
+}
+
+.shopping_cart {
+  width: 100%;
+  background: #fff;
+  height: 1000rpx;
+  transition: all 300ms ease-in-out;
+  z-index: 10;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+}
+
+.shopping_title {
+  width: 750rpx;
+  height: 120rpx;
+  background: rgba(255, 255, 255, 1);
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.shopping_title_ {
+  font-size: 32rpx;
+  font-family: PingFang-SC-Bold;
+  font-weight: bold;
+  color: rgba(47, 58, 64, 1);
+}
+
+.cartTotle {
+  position: absolute;
+  right: 58rpx;
+  top: 30rpx;
+  width: 85rpx;
+  height: 70rpx;
+  /* display: flex; */
+}
+
+.cartTotle_icon {
+  width: 60rpx;
+  height: 60rpx;
+}
+
+.cartTotle_icon_ {
+  width: 60rpx;
+  height: 60rpx;
+}
+
+.cartTotle_ {
+  position: absolute;
+  right: 0rpx;
+  top: 0rpx;
+  width: 50rpx;
+  height: 28rpx;
+  line-height: 28rpx;
+  background: rgba(255, 51, 102, 1);
+  border-radius: 14rpx;
+  font-size: 20rpx;
+  font-family: PingFangSC-Regular;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 1);
+  text-align: center;
+}
+
+.shopping_container {
+  width: 100%;
+  height: 880rpx;
+  overflow-y: scroll;
+  padding-top: 6rpx;
+}
+
+.goodsItem {
+  width: 702rpx;
+  height: 216rpx;
+  margin: 0 auto;
+  background: rgba(243, 243, 243, 1);
+  border-radius: 16rpx;
+  margin-top: 20rpx;
+  display: flex;
+  align-items: center;
+}
+
+.goodsItem_left {
+  width: 180rpx;
+  height: 180rpx;
+  background: rgba(255, 255, 255, 1);
+  border-radius: 16rpx;
+  overflow: hidden;
+  margin-right: 26rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 20rpx;
+}
+
+.goodsItem_img {
+  width: 173rpx;
+  height: 172rpx;
+}
+
+.goodsItem_right {
+  flex: 1;
+  height: 180rpx;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.goodsItem_title {
+  margin-top: 7rpx;
+  width: 430rpx;
+  height: 60rpx;
+  font-size: 28rpx;
+  font-family: PingFangSC-Regular;
+  font-weight: 400;
+  color: rgba(47, 58, 64, 1);
+  line-height: 1.2;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  white-space: wrap;
+  margin-bottom: 32rpx;
+}
+
+.goodsItem_msg {
+  flex: 1;
+  height: 60rpx;
+  padding-right: 32rpx;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.goodsItem_price {
+  height: 22px;
+  font-size: 28rpx;
+  font-family: PingFangSC-Regular;
+  font-weight: 400;
+  color: rgba(255, 102, 153, 1);
+  line-height: 28px;
+}
+
+.addGoods {
+  width: 60rpx;
+  height: 60rpx;
+}
+
+

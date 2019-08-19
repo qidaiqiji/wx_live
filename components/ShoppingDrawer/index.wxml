@@ -1,0 +1,32 @@
+<!--components/ShoppingDrawer/index.wxml-->
+      <cover-view class='mask_' catchtap='hideShoppingCart' catchtouchmove='move'></cover-view>
+      <cover-view class='shopping_cart ' >
+        <cover-view class='shopping_title'>
+          <cover-view class='shopping_title_'>相关商品</cover-view>
+          <cover-view class='cartTotle' catchtap='jumpToHomeShopping'>
+            <cover-view class='cartTotle_icon'>
+              <cover-image class='cartTotle_icon_' src='/images/icon_shoppingcart.png' /> </cover-view>
+            <cover-view class='cartTotle_'>{{totalCount?totalCount:cartCount?cartCount:0}}</cover-view>
+          </cover-view>
+
+        </cover-view>
+        <cover-view class='shopping_container'>
+          <block wx:for='{{goodsList}}' wx:key='index'>
+            <cover-view class='goodsItem'>
+              <cover-view class='goodsItem_left'>
+                <cover-image class='goodsItem_img' src='{{item.thumb}}'/> </cover-view>
+              <cover-view class='goodsItem_right'>
+                <cover-view class='goodsItem_title'>{{item.goodsName}}</cover-view>
+                <cover-view class='goodsItem_msg'>
+                  <cover-view class='goodsItem_price'>¥{{item.goodsPrice}}</cover-view>
+                  <cover-view class='addGoods' catchtap='handleAddCart' data-goodsId='{{goodsId}}' data-goodsNum='{{goodsNum}}'>
+                    <cover-image src='/images/add_cart.png' class='addGoods_img' /></cover-view>
+                </cover-view>
+              </cover-view>
+
+            </cover-view>
+          </block>
+
+        </cover-view>
+
+      </cover-view>

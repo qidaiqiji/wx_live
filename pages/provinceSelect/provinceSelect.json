@@ -1,0 +1,9 @@
+
+{
+  "navigationBarTitleText": "登录",
+  "usingComponents": {
+    "title": "/components/title/title",
+    "c-choose_address": "/components/choose_address/index",
+    "i-toast": "../../dist/toast/index"
+  }
+}

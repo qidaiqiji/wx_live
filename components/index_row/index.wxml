@@ -1,0 +1,41 @@
+<view class='index_row' bindtap='jumpToRoom' data-Id='{{item.id}}' data-isAnchor='{{item.isAnchor}}'>
+  <view class='row_left'>
+    <image src='{{item.cover}}'></image>
+
+    <view class='item_tag isLive' wx:if='{{type == "begin"&& item.isAnchor}}'>
+      <image src='/images/icon_kaibo.png'></image>
+      <view>去开课</view>
+    </view>
+    <view class='item_tag_not' wx:if='{{type == "begin"&& !item.isAnchor}}'>
+      <view class='item_tag subscribed' catchtap='cancelReminder' data-Id='{{item.id}}' wx:if='{{item.hasReminder}}'>
+        <image src='/images/icon_yidingyue.png'></image>
+        <view>已想看</view>
+      </view>
+      <view class='item_tag subscription' catchtap='reminder' data-Id='{{item.id}}' wx:if='{{!item.hasReminder}}'>
+        <image src='/images/icon_xiangkan.png'></image>
+        <view>想看</view>
+      </view>
+
+    </view>
+    <view class='item_tag playBack' wx:if='{{type == "playBack"}}'>
+        <view>回放</view>
+        <view>{{item.viewerCount}}人</view>
+    
+    </view>
+  </view>
+  <view class='row_right'>
+    <view class='right_title'>
+      <text>{{item.title}}</text> </view>
+    <view class='right_goods'>
+      <block wx:for='{{item.goodsList}}' wx:for-item='goodsItem' wx:key='{{index}}'>
+        <view >
+          <image src='{{goodsItem.thumb}}'></image>
+        </view>
+      </block>
+    </view>
+    <view class='right_date' wx:if='{{type !== "playBack"}}' >{{item.startAt}} 开课</view>
+    <view class='right_date_end' wx:if='{{type == "playBack"}}'>{{item.endAt}} 已播</view>
+    
+  </view>
+
+</view>

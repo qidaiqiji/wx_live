@@ -1,0 +1,8 @@
+{
+  "navigationBarTitleText": "认证审核",
+  "usingComponents": {
+    "title": "../../components/title/title",
+    "i-action-sheet": "../../dist/action-sheet/index",
+    "i-toast": "../../dist/toast/index"
+  }
+}
